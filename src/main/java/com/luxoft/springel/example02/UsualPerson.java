@@ -89,6 +89,8 @@ public class UsualPerson implements Person {
                 + "Height: " + height + "\n"
                 + "Country: " + country + "\n"
                 + "Country name: " + countryName + "\n"
+                + "Language: " + country.getLanguage() + "\n"
+                + "Country name: " + country.getLanguageName() + "\n"
                 + "Is Programmer?: " + isProgrammer + "\n";
         if ((contacts != null) && (!contacts.isEmpty())) {
             s += "Contacts: ";

@@ -40,11 +40,17 @@ public class SpringELAnnotationBasedTest {
 		person.setIsProgrammer(true);
 		person.setName("Ivan Ivanov");
 
+		Language language = new Language();
+		language.setId(0);
+		language.setCode("ru_RU");
+		language.setName("Russian");
+
 		Country country = new Country();
 		country.setId(1);
 		country.setName("Russia");
 		country.setCodeName("RU");
-
+		country.setLanguage(language);
+		country.setLanguageName(language.getName());
 		person.setCountry(country);
 
 		List<String> contacts = new ArrayList<String>();
