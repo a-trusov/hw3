@@ -1,19 +1,11 @@
 package com.luxoft.springel.example02;
 
-
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
-
-@Component("languageBean")
 public class Language {
 
-    @Value("0")
     private int id;
 
-    @Value("ru_RU")
     private String code;
 
-    @Value("Russian")
     private String Name;
 
     public Language() {
